@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canva</title>
+    <style>
+        *{
+            font-family: "Comic Sans Ms";
+            font-size: 30px;
+            color: rgb(111, 111, 255);
+        }
+        canvas{
+            cursor:crosshair;
+        }
+        body{
+            display: flex;
+            background-color: rgb(181, 181, 255);
+        }
+        #kontener{
+            width: 800px;
+            height: 600px;
+            color: rgb(255, 159, 189);
+            border: 10px groove rgb(142, 142, 255);
+            background-color: lavender;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #kontener2{
+            display: flex;
+            flex-direction: column;
+            width: 15%;
+            height: 600px;
+            border: 10px groove rgb(142, 142, 255);
+            background-color: lavender;
+            margin: auto;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        input{
+            display: block;
+            width: 80px;
+            height: 80px;
+            border: 10px groove rgb(142, 142, 255);
+            background-color: lavender;
+            margin: 20px auto;
+
+            
+        }
+        input:active{
+            border: 10px groove rgb(142, 142, 255);
+            background-color: rgb(170, 170, 255);
+            color: rgb(219, 219, 255);
+        
+        }
+        #Size{
+            width: 180px;
+            height: 20px;
+            
+        }
+        #sizevalue{
+            font-size: 30px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: -30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="kontener2">
+        <input id="b" type="button" value="brush" onclick="brush()">
+        <input id="e" type="button" value="eraser" onclick="eraser()">
+        <input id="w" type="button" value="nic" onclick="f1()">
+        <input type="color" id="Color">
+        <div id="sizevalue">10</div>
+        <input id="Size" type="range" value="10" min="0" max="200">
+    </div>
+    <div id="kontener">
+        <canvas id="c" width="800" height="600"></canvas>
+        
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
